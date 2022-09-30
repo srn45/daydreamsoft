@@ -1,0 +1,16 @@
+/* .mat-tab-group {
+    margin-bottom: 48px;
+  } */
+
+  .tabs {
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+    /* margin-top: 1em; */
+    /* margin-left: 25rem; */
+    width: 100%;
+}
+.active-link {
+    color: #e70e0e;
+   
+} 

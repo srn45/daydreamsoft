@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AaplService } from '../aapl.service';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +6,10 @@ import { AaplService } from '../aapl.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  constructor(private fakestore:AaplService) { }
-  categories:any[] = [];
-  
+
+  constructor() { }
+
   ngOnInit(): void {
-    this.fakestore.GetCategories().subscribe(category=> this.categories = category );
   }
 
 }

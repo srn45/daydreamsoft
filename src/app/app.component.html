@@ -1,5 +1,23 @@
-<a routerLink="/login-component">Login</a>
-<a routerLink="/home-component">Home</a>
+<!-- <mat-tab-group mat-align-tabs="start" >
+ <a routerLink="/home"></a><mat-tab  label="Home" >  </mat-tab>
+  <a routerLink="/users"></a><mat-tab  label="User" >  </mat-tab>
+   <mat-tab label="About"></mat-tab> 
+</mat-tab-group> --> 
 
+<!-- <mat-tab-group
+  (selectedTabChange)="onTabChanged($event)"
+>
+<mat-tab label="Link to some thing">menu</mat-tab>  empty stub tab only for link -->
+<!-- <mat-tab label="Some content tab"> ... content there ... </mat-tab>
+
+</mat-tab-group> --> 
+
+
+<nav mat-tab-nav-bar ngClass = "tabs">
+  <a mat-tab-link routerLink="/home" routerLinkActive="active-link" >Home</a>
+  <a mat-tab-link routerLink="/users" routerLinkActive="active-link">Users</a>
+  <a mat-tab-link routerLink="/about" routerLinkActive="active-link">About</a>
+  <a mat-tab-link routerLink="/" routerLinkActive="active-link">Login</a>
+</nav> 
 
 <router-outlet></router-outlet>
