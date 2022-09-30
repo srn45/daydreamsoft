@@ -3,26 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
-import { CryptocurrenciesComponent } from './cryptocurrencies/cryptocurrencies.component';
-import { NewsComponent } from './news/news.component';
-import { CryptoComponent } from './crypto/crypto.component';
-import { HttpClientModule } from '@angular/common/http';
-import { HttpHeaders } from '@angular/common/http';
-import { HttpHeaderResponse } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CryptocurrenciesComponent,
-    NewsComponent,
-    CryptoComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
